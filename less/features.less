@@ -1,0 +1,44 @@
+@sizes: {
+  mobile: 320px;
+  tablet: 768px;
+  desktop: 1024px;
+}
+
+.title{
+  text-align: center;
+  font-size: 36px;
+  font-family: "effer-bold";
+  color: rgb(11, 55, 91);
+  .lg-block({
+    font-size: 32px;
+  });  
+  .md-block({
+    font-size: 30px;
+  });  
+  .sm-block({
+    font-size: 26px;
+  });  
+}
+
+// -----------variables-------------
+@gold:rgb(210, 201, 136);
+@blue:rgb(11, 55, 91);
+@gray:rgb(47, 57, 65);
+@navbar-height:70px;
+@font-face {
+  font-family: 'effer-reg';
+  src: url("../fonts/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: 'effer-bold';
+  src: url("../fonts/Proxima\ Nova\ Bold.otf");
+}
+
+
+// -----------.Font---------------
+.font (@font-family; @font-size; @color) {
+  font-family: @font-family;
+  font-size: @font-size;
+  color: @color;
+}
